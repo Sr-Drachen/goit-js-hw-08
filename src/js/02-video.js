@@ -1,4 +1,4 @@
-import '/css/common.css';
+import '/src/css/common.css';
 import Player from '@vimeo/player';
 
 const TIME_KEY = 'videoplayer-current-time';
