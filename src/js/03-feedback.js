@@ -19,12 +19,16 @@ refs.form.addEventListener('submit', e => {
   e.currentTarget.reset();
   const objData = JSON.parse(localStorage.getItem(STORAGE_KEY));
   localStorage.removeItem(STORAGE_KEY);
+
+  console.log(objData);
 });
 
 function onTextareaInput(e) {
   formData[e.target.name] = e.target.value;
   const stringifiedData = JSON.stringify(formData);
   localStorage.setItem(STORAGE_KEY, stringifiedData);
+
+  console.log(formData);
 }
 
 function populateTextarea() {
